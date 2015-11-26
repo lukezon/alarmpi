@@ -1,33 +1,35 @@
-Welcome to the Alarm Pi code.
+Welcome to my version of the Alarm Pi code.
 
-It's "A Simple Spoken Weather And News Clock" for your Raspberry Pi.
+I have made a few ajustments and added some things to suit my needs.
 
-Please feel free to take it, and do what you will with it.
+Some Changes:
+-Ivona Voice Support
+-MTA Subway Alerts
+-Customizable Alarm tone
 
-This project is the culmination of 3 separate projects:
 
-An overview can be seen here:  https://youtu.be/-Or5jmBqsNE
-
-And see the details of each of the three parts.
-
-1) Alarm clock https://youtu.be/julETnOLkaU 
-
-2) Light https://youtu.be/WpM1aq4B8-A
-
-3) NAS https://youtu.be/T5eKBfstpI0
-
-*required packages:
+*required packages INSTALL IN THIS ORDER:
 
   sudo apt-get install python-feedparser mpg123 festival
+  
+  sudo apt-get install libxml2-dev libxslt-dev python-dev
 
-** YOU MUST USE RAMFS to avoid wear on your card and to enable Google Voice.
+  sudo apt-get install python3-lxml
+
+
+** YOU MUST USE RAMFS to avoid wear on your card and to enable Google Voice/Ivona.
 
   sudo mkdir -p /mnt/ram
 
   echo "ramfs       /mnt/ram ramfs   nodev,nosuid,noexec,nodiratime,size=64M   0 0" | sudo tee -a /etc/fstab 
 
-*** and finally to set your alarm for 733AM Mon-Fri
 
-  crontab -e 33 7 * * 1-5 sudo python /home/pi/sound_the_alarm.pi
+*** and finally to set your alarm for 730AM Mon-Fri
 
-Thanks again to Michael Kidd for adding the config file and giving this project a real structure.  
+  crontab -e 
+
+  Then add this: 30 7 * * 1-5 sudo python /home/pi/sound_the_alarm.pi
+
+
+
+There are still many extreme bugs with my code, please report any to me if you find them.

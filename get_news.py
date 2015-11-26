@@ -25,13 +25,13 @@ try:
 #print rss.entries[3]['title']
 #print rss.entries[3]['description']
 
-    newsfeed = rss.entries[0]['title'] + '.  ' + rss.entries[0]['description'] + '.  ' + rss.entries[1]['title'] + '.  ' + rss.entries[1]['description'] + '.  ' + rss.entries[2]['title'] + '.  ' + rss.entries[2]['description'] + '.  ' + rss.entries[3]['title'] + '.  ' + rss.entries[3]['description'] + '.  ' 
+    newsfeed = rss.entries[0]['title'] + '. Description: ' + rss.entries[0]['description'] + '.  ' + rss.entries[1]['title'] + '. description: ' + rss.entries[1]['description'] + '.  ' + rss.entries[2]['title'] + '. description: ' + rss.entries[2]['description'] + '.  ' + rss.entries[3]['title'] + '. description: ' + rss.entries[3]['description'] + '.  ' 
 
 # print newsfeed
     newsfeed = newsfeed.encode('utf-8')
 
 # Today's news from BBC
-    news = 'And now, The latest stories from the World section of the BBC News.  ' + newsfeed
+    news = 'And now, Luke, your morning global news. ' + newsfeed
     
 
 except rss.bozo:
