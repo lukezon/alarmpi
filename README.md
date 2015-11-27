@@ -15,6 +15,8 @@ Some Changes:
   sudo apt-get install libxml2-dev libxslt-dev python-dev
 
   sudo apt-get install python3-lxml
+  
+  sudo pip install pyvona
 
 
 ** YOU MUST USE RAMFS to avoid wear on your card and to enable Google Voice/Ivona.
