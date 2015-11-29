@@ -1,6 +1,7 @@
 #Welcome to my version of the Alarm Pi code.
 
 I have made a few ajustments and added some things to suit my needs.
+There are still many extreme bugs with my code, please report any to me if you find them.
 
 ###Added
 - Ivona Voice Support
@@ -22,5 +23,3 @@ I have made a few ajustments and added some things to suit my needs.
 ###Alarm Time Setup
 1. ```crontab -e```
 2. ```%MINUTE %HOUR %DAY %MONTH %DAYOFWEEK sudo python /home/pi/sound_the_alarm.pi```
-
-There are still many extreme bugs with my code, please report any to me if you find them.
