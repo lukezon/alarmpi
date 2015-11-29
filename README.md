@@ -9,17 +9,13 @@ I have made a few ajustments and added some things to suit my needs.
 
 ##Setup
 1. ```sudo apt-get install python-feedparser mpg123 festival```
-  
 2. ```sudo apt-get install libxml2-dev libxslt-dev python-dev```
-
 3. ```sudo apt-get install python3-lxml```
-  
 4. ```sudo pip install pyvona```
 
 ####You *_MUST_* use ramfs to avoid wear on your card and to enable Google Voice/Ivona.
 
 5. ```sudo mkdir -p /mnt/ram```
-
 6. ```echo "ramfs /mnt/ram ramfs nodev,nosuid,noexec,nodiratime,size=64M 0 0" | sudo tee -a /etc/fstab``` 
 
 
