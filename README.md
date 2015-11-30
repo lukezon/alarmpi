@@ -23,4 +23,4 @@ There are still many extreme bugs with my code, please report any to me if you f
 ###Alarm Time Setup
 - Use [Ubuntu CronHowto to help set up timing](https://help.ubuntu.com/community/CronHowto)
 1. ```crontab -e```
-2. ```%MINUTE %HOUR %DAY %MONTH %DAYOFWEEK sudo python /home/pi/sound_the_alarm.pi```
+2. ```%MINUTE %HOUR %DAY %MONTH %DAYOFWEEK sudo python /home/pi/alarmpi/sound_the_alarm.py```
