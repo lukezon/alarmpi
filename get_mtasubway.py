@@ -74,7 +74,7 @@ class MTAStatus():
             self.subwayDict[s.getName()] = s
         return self.subwayDict
 
-if __name__ == '__main__':
+if 1 == 1:
     
     mtaStatus=MTAStatus()
     timeMTA_ReportedData=mtaStatus.getReportTime()
